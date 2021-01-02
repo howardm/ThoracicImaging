@@ -2,14 +2,16 @@ name: "Thoracic Imaging"
 title: "Thoracic Imaging"
 theme: styles.css
 description: |
-  Thoracic Imaging
+  An educational site for thoracic imaging authored by Howard Mann, M.D.
 output_dir: "_site"
 navbar:
+  title: "Thoracic Imaging"
   logo: images/logo.jpg
   right:
     - text: "Home"
       href: index.html
     - text: "About"
       href: about.html
+base_url: https://thoracicimaging.info
 favicon: images/favicon.png
 output: distill::distill_article

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+  <channel>
+    <title>Thoracic Imaging</title>
+    <link>https://thoracicimaging.info</link>
+    <atom:link href="https://thoracicimaging.info/index.xml" rel="self" type="application/rss+xml"/>
+    <description>An online educational portal for thoracic imaging
+</description>
+    <image>
+      <title>Thoracic Imaging</title>
+      <url>https://thoracicimaging.info/images/favicon.png</url>
+      <link>https://thoracicimaging.info</link>
+    </image>
+    <generator>Distill</generator>
+    <lastBuildDate>Fri, 01 Jan 2021 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>Welcome to Thoracic Imaging</title>
+      <dc:creator>Howard Mann</dc:creator>
+      <link>https://thoracicimaging.info/posts/welcome</link>
+      <description>The future site of Thoracic Imaging</description>
+      <guid>https://thoracicimaging.info/posts/welcome</guid>
+      <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
+    </item>
+  </channel>
+</rss>
