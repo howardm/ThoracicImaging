@@ -1,0 +1,204 @@
+/* base variables */
+
+/* Edit the CSS properties in this file to create a custom
+   Distill theme. Only edit values in the right column
+   for each row; values shown are the CSS defaults.
+   To return any property to the default,
+   you may set its value to: unset
+   All rows must end with a semi-colon.                      */
+
+/* Optional: embed custom fonts here with `@import`          */
+/* This must remain at the top of this file.                 */
+
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+html {
+  /*-- Main font sizes --*/
+  --title-size:      40px;
+  --body-size:       1.06rem;
+  --code-size:       14px;
+  --aside-size:      12px;
+  --fig-cap-size:    13px;
+  /*-- Main font colors --*/
+  --title-color:     #222831;
+  --header-color:    #222831;
+  --body-color:      rgba(0, 0, 0, 0.8);
+  --aside-color:     rgba(0, 0, 0, 0.6);
+  --fig-cap-color:   rgba(0, 0, 0, 0.6);
+  /*-- Specify custom fonts ~~~ must be imported above   --*/
+  --heading-font:    "Raleway", sans-serif;
+  --mono-font:       "Fira Code", monospace;
+  --body-font:       "Open Sans", sans-serif;
+  --navbar-font:     "Raleway", sans-serif;  /* websites + blogs only */
+}
+
+/*-- ARTICLE METADATA --*/
+d-byline {
+  --heading-size:    0.6rem;
+  --heading-color:   rgba(0, 0, 0, 0.5);
+  --body-size:       1.06rem;
+  --body-color:      rgba(0, 0, 0, 0.8);
+}
+
+/*-- ARTICLE TABLE OF CONTENTS --*/
+.d-contents {
+  --heading-size:    18px;
+  --contents-size:   13px;
+}
+
+/*-- ARTICLE APPENDIX --*/
+d-appendix {
+  --heading-size:    15px;
+  --heading-color:   rgba(0, 0, 0, 0.65);
+  --text-size:       0.8em;
+  --text-color:      rgba(0, 0, 0, 0.5);
+}
+
+/*-- WEBSITE HEADER + FOOTER --*/
+/* These properties only apply to Distill sites and blogs  */
+
+.distill-site-header {
+  --title-size:       24px;
+  --text-color:       rgba(255, 255, 255, 0.8);
+  --text-size:        18px;
+  --hover-color:      white;
+  --bkgd-color:       #30475e;
+}
+
+.distill-site-footer {
+  --text-color:       rgba(255, 255, 255, 0.8);
+  --text-size:        15px;
+  --hover-color:      white;
+  --bkgd-color:       #30475e;
+}
+
+/*-- Change site gutters and so on --*/
+
+@media (min-width: 1200px) {
+    .base-grid, distill-header, d-title, d-abstract, d-article, d-appendix, distill-appendix, d-byline, d-footnote-list, d-citation-list, distill-footer {
+        grid-template-columns: [screen-start] 1fr [page-start kicker-start] 2vw [middle-start] 2vw [text-start kicker-end] 6vw 6vw 6vw 6vw 6vw 6vw 6vw 6vw [text-end gutter-start] 3vw [middle-end] 9vw [page-end gutter-end] 1fr [screen-end];
+        grid-column-gap: 2vw;
+    }
+}
+
+/*-- Additional custom styles --*/
+
+/* Change h3 Header size */
+/* ---------------------------------------------------- */
+
+d-article h3
+{
+   font-size: 26px;
+}
+
+/* Change default small h4 Header size & prevent all-uppercasing */
+/* ---------------------------------------------------- */
+
+d-article h4
+{
+   font-size: 22px;
+   text-transform: none;
+}
+
+
+/* Prescribe a Class of blue for document */
+/* ---------------------------------------------------- */
+
+ .BlueClass
+{
+color:#092a85;
+}
+
+/* Customization of Panelset with colors */
+/* ---------------------------------------------------- */
+
+.panelset {
+  --panel-tab-foreground: currentColor;
+  --panel-tab-active-foreground: #0051BA;
+  --panel-tab-hover-foreground: #d22;
+  --panel-tabs-border-bottom: #ddd;
+  --panel-tab-inactive-opacity: 0.5;
+}
+
+
+/* CSS for a div class text box */
+/* ---------------------------------------------------- */
+
+.boxBorder {
+     background-color:#f6f6f6;
+     border: 1px solid #696969;
+     border-radius:8px;
+     font-family: 'Palatino', serif;
+     font-size:16px;
+     padding:2px;
+     margin:3px;
+}
+
+/* Specify inline code background */
+/* ---------------------------------------------------- */
+
+
+code {
+background-color: #f2f4ff;
+}
+
+/* Color every second row in a table */
+/* ---------------------------------------------------- */
+
+tr:nth-child(even) {
+  background: #f8f8f8;
+}
+
+/* A blue box for Teaching Points */
+/* ---------------------------------------------------- */
+
+div.blue { 
+background-color:#e7f0f4; border-radius: 5px; padding: 8px;
+}
+  
+/* CSS for creating a horizontal list */
+/* ---------------------------------------------------- */  
+  
+.list-inline {
+    list-style: none;
+    padding: 0;
+}
+
+.list-inline > li {
+    display: inline;
+}
+
+ /* CSS for creating a horizontal list with pipeline separators */
+/* ---------------------------------------------------- */ 
+
+.list-pipe > li:not(:last-child)::after {
+    content: "|";
+    margin: 0 .25em;
+}
+
+ /* CSS for centering Close Case notification: html code: <p id="closecase">
+    <span>End of Case</span></p> */
+/* ---------------------------------------------------- */ 
+ 
+#closecase {
+ color:blue;
+ font-size:16px;
+ text-align:center;
+ display:block;
+}
+
+/* Additional Header Customization */
+/* ---------------------------------------------------- */ 
+
+
+.distill-site-header {
+  padding-top: 0.5rem;
+  padding-bottom: 0.25rem;
+}
+
+.distill-site-header .logo img{
+  max-height: 40px; /* Makes logo bigger, default was 20px */
+}
+
