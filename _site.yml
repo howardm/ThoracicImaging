@@ -1,12 +1,14 @@
-name: "ThoracicImagingWebsite"
+name: "Thoracic Imaging"
 title: "Thoracic Imaging"
 description: |
   Thoracic Imaging
 output_dir: "_site"
 navbar:
+  logo: images/logo.jpg
   right:
     - text: "Home"
       href: index.html
     - text: "About"
       href: about.html
+favicon: images/favicon.png
 output: distill::distill_article
