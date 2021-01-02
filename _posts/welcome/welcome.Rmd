@@ -1,13 +1,9 @@
 ---
 title: "Welcome to Thoracic Imaging"
 description: |
-  Welcome to our new blog, Thoracic Imaging. We hope you enjoy 
-  reading what we have to say!
+  The future site of Thoracic Imaging
 author:
-  - name: Nora Jones 
-    url: https://example.com/norajones
-    affiliation: Spacely Sprockets
-    affiliation_url: https://example.com/spacelysprokets
+  - name: Howard Mann
 date: 01-01-2021
 output:
   distill::distill_article:

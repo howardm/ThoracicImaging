@@ -2,18 +2,18 @@
   {
     "path": "posts/welcome/",
     "title": "Welcome to Thoracic Imaging",
-    "description": "Welcome to our new blog, Thoracic Imaging. We hope you enjoy \nreading what we have to say!",
+    "description": "The future site of Thoracic Imaging",
     "author": [
       {
-        "name": "Nora Jones",
-        "url": "https://example.com/norajones"
+        "name": "Howard Mann",
+        "url": {}
       }
     ],
     "date": "2021-01-01",
     "categories": [],
     "contents": "\n\n\n\n",
     "preview": {},
-    "last_modified": "2021-01-01T21:06:28-07:00",
-    "input_file": {}
+    "last_modified": "2021-01-01T21:59:54-07:00",
+    "input_file": "welcome.utf8.md"
   }
 ]
