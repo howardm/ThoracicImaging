@@ -23,7 +23,7 @@ html {
   --fig-cap-size:    13px;
   /*-- Main font colors --*/
   --title-color:     #222831;
-  --header-color:    #222831;
+  --header-color:    #092a85;
   --body-color:      rgba(0, 0, 0, 0.8);
   --aside-color:     rgba(0, 0, 0, 0.6);
   --fig-cap-color:   rgba(0, 0, 0, 0.6);
@@ -83,7 +83,7 @@ d-appendix {
     }
 }
 
-/*-- Additional custom styles --*/
+/*-- Additional custom styles for my website --*/
 
 /* Change h3 Header size */
 /* ---------------------------------------------------- */
@@ -93,12 +93,20 @@ d-article h3
    font-size: 26px;
 }
 
-/* Change default small h4 Header size & prevent all-uppercasing */
+/* Specify h1 to h3 header blue color */
+/* ---------------------------------------------------- */
+
+d-article h1, h2, h3 {
+  color: #092a85;
+}
+
+/* Change default small h4 Header size, assign green color, & prevent all-uppercasing */
 /* ---------------------------------------------------- */
 
 d-article h4
 {
    font-size: 22px;
+   color: #3a614d;
    text-transform: none;
 }
 
@@ -110,6 +118,25 @@ d-article h4
 {
 color:#092a85;
 }
+
+/* css to change font color in blockquote */
+/* ---------------------------------------------------- */
+
+
+blockquote p {
+   color: #092a85;
+}
+
+
+/* css to center images with a width of 70% */
+/* ---------------------------------------------------- */
+
+.center {
+display: block;
+margin: 1em auto;
+width: 70%;
+}
+
 
 /* Customization of Panelset with colors */
 /* ---------------------------------------------------- */
@@ -202,3 +229,17 @@ background-color:#e7f0f4; border-radius: 5px; padding: 8px;
   max-height: 40px; /* Makes logo bigger, default was 20px */
 }
 
+/* Change color of bullets and link underlines */
+/* ---------------------------------------------------- */ 
+
+/* Change bullets */
+ul > li::marker {
+  font-size: 1.125em;
+  color: #092a85;
+}
+
+/* Change link appearance */
+d-article a {
+  border-bottom: 1.5px solid #6da7e8;
+  text-decoration: none;
+}

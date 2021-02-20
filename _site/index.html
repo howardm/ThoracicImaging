@@ -2090,7 +2090,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     --fig-cap-size:    13px;
     /*-- Main font colors --*/
     --title-color:     #222831;
-    --header-color:    #222831;
+    --header-color:    #092a85;
     --body-color:      rgba(0, 0, 0, 0.8);
     --aside-color:     rgba(0, 0, 0, 0.6);
     --fig-cap-color:   rgba(0, 0, 0, 0.6);
@@ -2150,7 +2150,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
       }
   }
   
-  /*-- Additional custom styles --*/
+  /*-- Additional custom styles for my website --*/
   
   /* Change h3 Header size */
   /* ---------------------------------------------------- */
@@ -2160,12 +2160,20 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
      font-size: 26px;
   }
   
-  /* Change default small h4 Header size & prevent all-uppercasing */
+  /* Specify h1 to h3 header blue color */
+  /* ---------------------------------------------------- */
+  
+  d-article h1, h2, h3 {
+    color: #092a85;
+  }
+  
+  /* Change default small h4 Header size, assign green color, & prevent all-uppercasing */
   /* ---------------------------------------------------- */
   
   d-article h4
   {
      font-size: 22px;
+     color: #3a614d;
      text-transform: none;
   }
   
@@ -2177,6 +2185,25 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   {
   color:#092a85;
   }
+  
+  /* css to change font color in blockquote */
+  /* ---------------------------------------------------- */
+  
+  
+  blockquote p {
+     color: #092a85;
+  }
+  
+  
+  /* css to center images with a width of 70% */
+  /* ---------------------------------------------------- */
+  
+  .center {
+  display: block;
+  margin: 1em auto;
+  width: 70%;
+  }
+  
   
   /* Customization of Panelset with colors */
   /* ---------------------------------------------------- */
@@ -2268,7 +2295,21 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   .distill-site-header .logo img{
     max-height: 40px; /* Makes logo bigger, default was 20px */
   }
-  </style>
+  
+  /* Change color of bullets and link underlines */
+  /* ---------------------------------------------------- */ 
+  
+  /* Change bullets */
+  ul > li::marker {
+    font-size: 1.125em;
+    color: #092a85;
+  }
+  
+  /* Change link appearance */
+  d-article a {
+    border-bottom: 1.5px solid #6da7e8;
+    text-decoration: none;
+  }</style>
   <style type="text/css">
   /* base style */
   
@@ -2591,19 +2632,17 @@ function init_posts_list() {
 <div class="posts-container posts-apply-limit l-page">
 <div class="posts-list">
 <h1 class="posts-list-caption" data-caption="Thoracic Imaging">Thoracic Imaging</h1>
-<a href="posts/welcome/" class="post-preview">
+<a href="posts/2021-02-20-site-test/" class="post-preview">
 <script class="post-metadata" type="text/json">{"categories":[]}</script>
 <div class="metadata">
-<div class="publishedDate">Jan. 1, 2021</div>
-<div class="dt-authors">
-<div class="dt-author">Howard Mann</div>
+<div class="publishedDate">Feb. 20, 2021</div>
 </div>
+<div class="thumbnail">
+<img src="posts/2021-02-20-site-test/images/CXR.jpg"/>
 </div>
-<div class="thumbnail"></div>
 <div class="description">
-<h2>Welcome to Thoracic Imaging</h2>
-<div class="dt-tags"></div>
-<p>The future site of Thoracic Imaging</p>
+<h2>Site Test</h2>
+<p>A test document for the website.</p>
 </div>
 </a>
 </div>

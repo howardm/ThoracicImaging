@@ -1,7 +1,7 @@
 ---
-title: "About this blog"
+title: "Future home of Thoracic Imaging"
 description: |
-  Some additional details about the blog
+  Under intense construction!
 ---
 
 ```{r setup, include=FALSE}

@@ -4,7 +4,7 @@
     <title>Thoracic Imaging</title>
     <link>https://thoracicimaging.info</link>
     <atom:link href="https://thoracicimaging.info/index.xml" rel="self" type="application/rss+xml"/>
-    <description>An online educational portal for thoracic imaging
+    <description>An educational site for thoracic imaging authored by Howard Mann, M.D.
 </description>
     <image>
       <title>Thoracic Imaging</title>
@@ -12,14 +12,15 @@
       <link>https://thoracicimaging.info</link>
     </image>
     <generator>Distill</generator>
-    <lastBuildDate>Fri, 01 Jan 2021 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 20 Feb 2021 00:00:00 +0000</lastBuildDate>
     <item>
-      <title>Welcome to Thoracic Imaging</title>
-      <dc:creator>Howard Mann</dc:creator>
-      <link>https://thoracicimaging.info/posts/welcome</link>
-      <description>The future site of Thoracic Imaging</description>
-      <guid>https://thoracicimaging.info/posts/welcome</guid>
-      <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
+      <title>Site Test</title>
+      <dc:creator>HowardMann</dc:creator>
+      <link>https://thoracicimaging.info/posts/2021-02-20-site-test</link>
+      <description>A test document for the website.</description>
+      <guid>https://thoracicimaging.info/posts/2021-02-20-site-test</guid>
+      <pubDate>Sat, 20 Feb 2021 00:00:00 +0000</pubDate>
+      <media:content url="https://thoracicimaging.info/posts/2021-02-20-site-test/images/CXR.jpg" medium="image" type="image/jpeg"/>
     </item>
   </channel>
 </rss>

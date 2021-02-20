@@ -2,18 +2,18 @@
   "articles": [
     {
       "path": "about.html",
-      "title": "About this blog",
-      "description": "Some additional details about the blog",
+      "title": "Future home of Thoracic Imaging",
+      "description": "Under intense construction!",
       "author": [],
       "contents": "\n\n\n\n",
-      "last_modified": "2021-01-02T13:22:13-07:00"
+      "last_modified": "2021-02-20T14:00:06-07:00"
     },
     {
       "path": "index.html",
       "title": "Thoracic Imaging",
       "author": [],
       "contents": "\n\n\n\n",
-      "last_modified": "2021-01-02T13:22:14-07:00"
+      "last_modified": "2021-02-20T14:00:07-07:00"
     }
   ],
   "collections": ["posts/posts.json"]
