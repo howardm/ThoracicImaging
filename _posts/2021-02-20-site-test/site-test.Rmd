@@ -3,7 +3,7 @@ title: "Site Test"
 description: |
   A test document for the website.
 author:
-  - name: HowardMann
+  - name: Howard Mann
 date: 02-20-2021
 fig_caption: true
 output: 
@@ -12,8 +12,7 @@ output:
     toc_depth: 2
     self_contained: false    
     css: styles.css
-    includes:
-        in_header: invokepacsbinjs.html
+    
 ---
 
 
@@ -277,12 +276,12 @@ Testing Pacsbin again...
 
   <div style="text-align:center;">
   <iframe class="pacsbin"
-         id="vali"
+         id="vali1"
          src="https://www.pacsbin.com/c/W1QLNa-iQS?s=5db79e00e55657647bcf5e1f&i=5db79e00e55657647bcf5e20&ww=3601&wc=2560&an=false&overlay=false&notes=false&header=false"
          style="width: 500px; height: 500px; border: 0;"></iframe>
          <ul class="list-inline list-pipe">
-         <li><a class="pacsbin-link" href="#vali?s=0">PA Chest</a></li>
-         <li><a class="pacsbin-link" href="#vali?s=1">Axial CT</a></li>
+         <li><a class="pacsbin-link" href="#vali1?s=0">PA Chest</a></li>
+         <li><a class="pacsbin-link" href="#vali1?s=1">Axial CT</a></li>
          </ul>
          
   </div>
@@ -315,7 +314,7 @@ Three CXR images side-by-side (without lightbox function; must have same pixel d
 
 ![](images/CT1.jpg){width=32%} ![](images/CT2.jpg){width=32%} ![](images/CT3.jpg){width=32%}
 
-
+<script type="text/javascript" src="pacsbin-client.js"></script>
 <script type="text/javascript" src="newpacsbin-client.js"></script>
 <script type="text/javascript" src="lightbox.js"></script>
 
