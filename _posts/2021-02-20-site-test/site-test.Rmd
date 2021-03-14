@@ -224,9 +224,8 @@ Here is text before presentation of the embedded viewer.
          style="width: 500px; height: 500px; border: 0;"></iframe>
          <ul class="list-inline list-pipe">
          <li><a class="pacsbin-link" href="#vali?s=0">PA Chest</a></li>
-         <li><a class="pacsbin-link" href="#vali?s=1">Axial CT</a></li>
+         <li><a class="pacsbin-link" href="#vali?s=1&scale=0.75">Axial CT</a></li>
          </ul>
-         
 </div>
           
 </p>
@@ -278,10 +277,10 @@ Testing Pacsbin again...
   <iframe class="pacsbin"
          id="vali1"
          src="https://www.pacsbin.com/c/W1QLNa-iQS?s=5db79e00e55657647bcf5e1f&i=5db79e00e55657647bcf5e20&ww=3601&wc=2560&an=false&overlay=false&notes=false&header=false"
-         style="width: 500px; height: 500px; border: 0;"></iframe>
+         style="width: 600px; height: 600px; border: 0;"></iframe>
          <ul class="list-inline list-pipe">
          <li><a class="pacsbin-link" href="#vali1?s=0">PA Chest</a></li>
-         <li><a class="pacsbin-link" href="#vali1?s=1">Axial CT</a></li>
+         <li><a class="pacsbin-link" href="#vali1?s=1&scale=0.75">Axial CT</a></li>
          </ul>
          
   </div>
