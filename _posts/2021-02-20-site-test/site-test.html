@@ -94,7 +94,6 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   <!--  https://schema.org/Article -->
   <meta property="article:published" itemprop="datePublished" content="2021-02-20"/>
   <meta property="article:created" itemprop="dateCreated" content="2021-02-20"/>
-  <meta name="article:author" content="Howard Mann"/>
   
   <!--  https://developers.facebook.com/docs/sharing/webmasters#markup -->
   <meta property="og:title" content="Site Test"/>
@@ -111,7 +110,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   <!--radix_placeholder_rmarkdown_metadata-->
   
   <script type="text/json" id="radix-rmarkdown-metadata">
-  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","author","date","fig_caption","output"]}},"value":[{"type":"character","attributes":{},"value":["Site Test"]},{"type":"character","attributes":{},"value":["A test document for the website.\n"]},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name"]}},"value":[{"type":"character","attributes":{},"value":["Howard Mann"]}]}]},{"type":"character","attributes":{},"value":["02-20-2021"]},{"type":"logical","attributes":{},"value":[true]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["toc","toc_depth","self_contained","css"]}},"value":[{"type":"logical","attributes":{},"value":[true]},{"type":"integer","attributes":{},"value":[2]},{"type":"logical","attributes":{},"value":[false]},{"type":"character","attributes":{},"value":["styles.css"]}]}]}]}
+  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","date","fig_caption","output"]}},"value":[{"type":"character","attributes":{},"value":["Site Test"]},{"type":"character","attributes":{},"value":["A test document for the website.\n"]},{"type":"character","attributes":{},"value":["02-20-2021"]},{"type":"logical","attributes":{},"value":[true]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["toc","toc_depth","self_contained","css"]}},"value":[{"type":"logical","attributes":{},"value":[true]},{"type":"integer","attributes":{},"value":[2]},{"type":"logical","attributes":{},"value":[false]},{"type":"character","attributes":{},"value":["styles.css"]}]}]}]}
   </script>
   <!--/radix_placeholder_rmarkdown_metadata-->
   
@@ -1425,7 +1424,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <!--radix_placeholder_front_matter-->
 
 <script id="distill-front-matter" type="text/json">
-{"title":"Site Test","description":"A test document for the website.","authors":[{"author":"Howard Mann","authorURL":"#","affiliation":"&nbsp;","affiliationURL":"#","orcidID":""}],"publishedDate":"2021-02-20T00:00:00.000+00:00","citationText":"Mann, 2021"}
+{"title":"Site Test","description":"A test document for the website.","authors":[],"publishedDate":"2021-02-20T00:00:00.000+00:00"}
 </script>
 
 <!--/radix_placeholder_front_matter-->
@@ -1441,11 +1440,6 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <p><p>A test document for the website.</p></p>
 </div>
 
-<div class="d-byline">
-  Howard Mann  
-  
-<br/>02-20-2021
-</div>
 
 <div class="d-article">
 <div class="d-contents d-contents-float">
@@ -1457,9 +1451,10 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 </ul>
 </nav>
 </div>
+<!-- setup and libraries chunk -->
 <p>Distill is a publication format for scientific and technical writing, native to the web. Learn more about using Distill for R Markdown at <a href="https://rstudio.github.io/distill" class="uri">https://rstudio.github.io/distill</a>. Much more text here ad libitem, etc, etc.</p>
 <p>More text here… And then a link to <a href="http:chestradiologists.org">chestradiologists.org</a>.</p>
-<p>The <span class="BlueClass"><strong>blue border</strong></span> around the image indicates it’s lightboxed.</p>
+<p>The <span style="color:blue"><strong>blue border</strong></span> around the image indicates it’s lightboxed.</p>
 <aside>
 How many characters can I write here before it wraps to a new line ? Maybe need more characters before wrapping.
 </aside>
@@ -1535,16 +1530,49 @@ Vivamus venenatis egestas eros ut tempus. Vivamus id est nisi. Aliquam molestie 
 </tbody>
 </table>
 </div>
-<pre class="markup"><code>Testing a markup entry of some kind
-author:
-  - name: Howard Mann
-    url: http://howardmann.us</code></pre>
+<h3 id="definition-lists">Definition lists</h3>
+<p>This is an example of creating a section of <em>definitions</em> with different formating:</p>
+<dl>
+<dt>Aggregation</dt>
+<dd><p><strong>The process of collecting or gathering many separate pieces into a whole.</strong></p>
+</dd>
+<dt>Analytical skills <em>in programming</em></dt>
+<dd><p>Qualities and characteristics as well as computational tools associated with using facts to solve problems. E.g.,</p>
+</dd>
+</dl>
+<pre><code>R markdown, R packages, etc.
+</code></pre>
+<dl>
+<dt>Area chart</dt>
+<dd><p>A data visualization that uses individual data points for a changing variable connected by a continuous line with a field in area underneath.</p>
+</dd>
+</dl>
+<h3 id="testing-two-column-grid">Testing two column grid</h3>
+<p>This is a css-derived alternative to a floating image for displaying an image with adjacent text.</p>
+<div class="wrapper2">
+<div>
+<p><img src="images/CT1.jpg" style="width:90.0%" /></p>
+</div>
+<div>
+<p>Text here associated with the image alongside. <span style="color:green">⟶</span></p>
+<p>Suitable for explication text using colored arrows <span style="color:blue">⟶</span></p>
+<p>Vivamus venenatis egestas eros ut tempus. Vivamus id est nisi. Aliquam molestie erat et sollicitudin venenatis. In ac lacus at velit scelerisque mattis <span style="color:red">⟶</span></p>
+</div>
+</div>
+<p></br></p>
+<p>Inserting a horizontal line before and after a Teaching Points box.</p>
+<div>
+<hr>
+</div>
 <div class="blue">
 <p><strong>Teaching Points</strong></p>
 <ul>
 <li>This is my first teaching point</li>
 <li>This is my second teaching point</li>
 </ul>
+</div>
+<div>
+<hr>
 </div>
 <p>
 </p>
@@ -1682,7 +1710,7 @@ Click on the arrowhead to reveal and click again to close the case
 </ul>
 </div>
 </p>
-<p>Let’s try a panelset with three Tabs:</p>
+<p>Let’s try a panelset with four Tabs:</p>
 <aside>
 Return to the <em>Presentation Tab</em> when you’re finished with the case
 </aside>
@@ -1719,6 +1747,21 @@ Return to the <em>Presentation Tab</em> when you’re finished with the case
   </div>
           
 </p>
+</div>
+<div class="panel">
+<h2 id="explanation-ii-three-columns" class="panel-name">Explanation II Three Columns</h2>
+<div class="wrapper3">
+<div>
+<p><img src="images/CT1.jpg" style="width:95.0%" /></p>
+</div>
+<div>
+<p><img src="images/CT1.jpg" style="width:95.0%" /></p>
+</div>
+<div>
+<p><span style="font-size:90%"> Text here associated with the image alongside. <span style="color:green">⟶</span> </span></p>
+<p><span style="font-size:90%"> Suitable for explication text using colored arrows <span style="color:blue">⟶</span> </span></p>
+</div>
+</div>
 </div>
 </div>
 <p>O.K.</p>
